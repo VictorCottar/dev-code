@@ -41,6 +41,11 @@ app.get('/perguntas', (req, res) => {
   .catch(err => console.log('Não foi possível buscar pergunta', err)); 
 });
 
+
+app.get('/endgame', (req, res) => {
+  res.render('endgame', { score: req.query.score });
+});
+
 app.get('/public/styles.css', function(req, res) {
     fs.readFile(__dirname + '/public/styles.css', 'utf8', function(err, data) {
     if (err) {
