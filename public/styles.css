@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Noto+Znamenny+Musical+Notation&family=Roboto&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Work+Sans&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family:"Ubuntu Sans Mono", monospace;
+}
+
+strong {
+    font-weight: 400;    
+    text-decoration: underline;
+    text-decoration-color:#080b1a;
+}
+
+/* HEADER */
+
+#title_header {
+    font-size: 3.4em;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#title_header:hover {
+    color: #eeeeee;
+}
+
+/* MAIN */
+ 
+main {
+    width: 34rem;
+}
+
+#text_home {
+    font-size: 4rem;
+    color: #080b1a;
+}
+
+#button_play {
+    font-size: 2.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 20rem;
+    text-align: center;
+    text-decoration: none;
+    color: #080b1a;
+    background-color: white;
+    border: 5px solid #080b1a;
+    margin-top: 8rem;
+    
+}
+
+#button_play:hover {
+    background-color: #eeeeee;
+}
+
+#div_text_home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 800px;
+    margin-top: 7rem;
+}
+
+/* CONTAINER PERGUNTA */
+#container_questions {
+    width: 50rem;
+    height: 36rem;
+    margin-top: 5.5rem;
+    border: 2px solid #080b1a;
+    border-radius: 10px;
+    border-right-width: 4px;   
+    border-bottom-width: 4px;
+    padding: 2rem;
+    text-align: center;
+}
+
+#title_question {
+    margin-bottom: 3rem;
+    color: #080b1a;
+}
+
+#button_question {
+    width: 25rem;
+    border: 2px solid #080b1a;
+    border-radius: 10px;
+    background-color: white;
+    color: #080b1a;
+    margin: auto;
+    padding: 1rem;    
+}
+
+#button_question:hover {
+    background-color: #eeeeee;
+}
