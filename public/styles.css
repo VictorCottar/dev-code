@@ -72,8 +72,8 @@ main {
 /* CONTAINER PERGUNTA */
 #container_questions {
     width: 50rem;
-    height: 36rem;
-    margin-top: 5.5rem;
+    height: 35rem;
+    margin-top: 4.2rem;
     border: 2px solid #080b1a;
     border-radius: 10px;
     border-right-width: 4px;   
@@ -98,5 +98,47 @@ main {
 }
 
 #button_question:hover {
+    background-color: #eeeeee;
+}
+
+#button_question_correct {
+    width: 25rem;
+    border: 2px solid #080b1a;
+    border-radius: 10px;
+    background-color: white;
+    color: #080b1a;
+    margin: auto;
+    padding: 1rem;    
+}
+
+#button_question_correct:hover {
+    background-color: #eeeeee;
+}
+
+/* CARD ENDGAME */
+#card_endgame {
+    width: 40rem;
+    height: 20rem;
+    margin-top: 4.2rem;
+    border: 2px solid #080b1a;
+    border-radius: 10px;
+    border-right-width: 4px;   
+    border-bottom-width: 4px;
+    padding: 2rem;
+    text-align: center;
+}
+
+#button_restart {
+    width: 25rem;
+    border: 2px solid #080b1a;
+    border-radius: 10px;
+    background-color: white;
+    color: #080b1a;
+    margin: auto;
+    padding: 1rem;
+    text-decoration: none;   
+}
+
+#button_restart:hover {
     background-color: #eeeeee;
 }

@@ -1,9 +1,11 @@
 <main class="d-flex justify-content-center align-itens-center" style="width: 100%;">
     <section id="container_questions" class="d-flex flex-column justify-content-center align-itens-center">
         <h1 id="title_question" class="fs-2">{{pergunta.dataValues.pergunta}}</h1>
-        <button id="button_question" class="mt-3">{{pergunta.dataValues.resposta_correta}}</button>
-        <button id="button_question" class="mt-3">{{pergunta.dataValues.resposta_errada_1}}</button>
-        <button id="button_question" class="mt-3">{{pergunta.dataValues.resposta_errada_2}}</button>
-        <button id="button_question" class="mt-3">{{pergunta.dataValues.resposta_errada_3}}</button>
+        <div id="answers_box" class="m-0">
+            <button id="button_question_correct" class="mt-3">{{pergunta.dataValues.resposta_correta}}</button>
+            <button id="button_question" class="mt-3">{{pergunta.dataValues.resposta_errada_1}}</button>
+            <button id="button_question" class="mt-3">{{pergunta.dataValues.resposta_errada_2}}</button>
+            <button id="button_question" class="mt-3">{{pergunta.dataValues.resposta_errada_3}}</button>
+        </div>
     </section>
 </main>

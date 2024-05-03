@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const db = require('./db/connection');
 const Pergunta = require('./models/Pergunta');
 const Sequelize = require('sequelize');
 const { engine } = require('express-handlebars');
@@ -32,15 +31,15 @@ app.get('/', (req, res) => {
 
 
 app.get('/perguntas', (req, res) => {
-    Pergunta.findOne({
-      order: Sequelize.literal('random()')
-    })
-    .then(pergunta => {
-      // Renderize a view com os dados da pergunta
-      res.render('questions', { pergunta: pergunta });
-    })
-    .catch(err => console.log('Não foi possível buscar pergunta', err)); 
-  });
+  Pergunta.findOne({
+    order: Sequelize.literal('random()')
+  })
+  .then(pergunta => {
+    
+    res.render('questions', { pergunta: pergunta });
+  })
+  .catch(err => console.log('Não foi possível buscar pergunta', err)); 
+});
 
 app.get('/public/styles.css', function(req, res) {
     fs.readFile(__dirname + '/public/styles.css', 'utf8', function(err, data) {
@@ -53,5 +52,5 @@ app.get('/public/styles.css', function(req, res) {
   
     res.send(data);
 
-    });
+});
 });
