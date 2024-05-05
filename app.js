@@ -9,14 +9,14 @@ const fs = require('fs');
 
 const PORT = process.env.PORT || 8080;
 
+// STATIC FOLDER
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(express.json());
 
 app.listen(PORT, () => { 
     console.log(`Servidor rodando na porta: ${PORT}`);
 });   
-
-// STATIC FOLDER
-app.use(express.static(path.join(__dirname, 'public')));
 
 // HANDLEBARS
 app.engine('handlebars', engine());
