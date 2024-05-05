@@ -9,8 +9,13 @@ const fs = require('fs');
 
 const PORT = process.env.PORT || 8080;
 
-// STATIC FOLDER
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), {
+  setHeaders: (res, path) => {
+    if (path.endsWith('.js')) {
+      res.type('application/javascript');
+    }
+  }
+}));
 
 app.use(express.json());
 
