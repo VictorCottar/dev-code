@@ -3,10 +3,24 @@
         <p class="fs-2">Você chegou ao fim do Quiz!</p>
         <strong><p class="fs-3 mt-2" id="score"></p></strong>
         <a id="button_restart" href="/perguntas">Recomeçar</a>
+        <div class="d-flex flex-column gap-1">
+            <p class="fs-4 mt-3"><strong>Compartilhe seu resultado</strong></p>
+            <button  id="button_sharer" class="sharer" data-sharer="whatsapp" data-title="" data-url="https://dev-quiz-dvb4.onrender.com/">Compartilhar no WhatsApp</button>
+            <button  id="button_sharer" class="sharer" data-sharer="twitter" data-title="" data-url="https://dev-quiz-dvb4.onrender.com/">Compartilhar no X</button>
+        </div>    
     </section>
 </main>
 <script>
     const urlParams = new URLSearchParams(window.location.search);
     const correctAnswers = urlParams.get('score');
     document.getElementById('score').textContent = `Acertou ${correctAnswers} de 5 perguntas!`; 
+</script>
+<script src="https://unpkg.com/sharer.js"></script>
+<script>
+  window.addEventListener('load', function () {
+    var buttons = document.querySelectorAll('.sharer');
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].setAttribute('data-title', `Acabei de jogar o dev{quiz} e meu resultado foi ${correctAnswers} de 5 perguntas!`);
+    }
+  });
 </script>
