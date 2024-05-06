@@ -25,6 +25,4 @@ const Pergunta = db.define('perguntas', {
     }
 });
 
-
-
 module.exports = Pergunta;
