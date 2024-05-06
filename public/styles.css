@@ -147,11 +147,19 @@ main {
 /* MEDIAS QUERIES */
 
 /* CELULAR */
-@media (max-width: 420px) {
+@media (max-width: 425px) {
     
     /* HOME */
+    header {
+        height: 6rem !important;
+    }
+
+    footer {
+        height: 2rem !important;
+    }
+
     #title_header {
-        font-size: 2.4em;
+        font-size: 2.3em;
     }
 
     #main_home {
@@ -166,36 +174,36 @@ main {
         justify-content: center;
         align-items: center;
         height: 420px;
-        width: 300px;
-        margin-top: 2rem;
+        width: 350px !important;
+        margin-top: 1rem !important;
     }
 
     #text_home {
-        font-size: 1rem;
+        font-size: 30px !important;
     }
     
     #button_play {
         font-size: 1.4rem;
         padding: 0.5rem;
         width: 10rem;
-        margin: 0px 0px 60px 0px !important;
+        margin: 0 !important;
     }
 
     /* PERGUNTAS */
     #container_questions {
-        width: 28rem;
-        height: 30rem;
-        margin-top: 2rem;
+        width: 24rem !important;
+        height: 36rem !important;
+        margin-top: 1rem !important;
     }
 
     #title_question {
-        margin-top: 2rem !important;
-        font-size: 0.9rem !important;
+        margin-top: 1rem !important;
+        font-size: 10px;
     }
 
     #button_question {
         width: 13rem;
-        font-size: 10px !important;
+        font-size: 9px !important;
         margin: 0px 0px 10px 0px !important;    
     }
     
@@ -207,13 +215,13 @@ main {
 
     /* CARD ENDGAME */
     #card_endgame {
-        width: 18rem;
+        width: 24rem !important;
         height: 17rem;
         margin-top: 2rem;
     }
 
     #button_restart {
-        width: 11rem;
+        width: 8rem;
         font-size: 14px !important;
         margin: auto !important;       
     }
@@ -291,7 +299,6 @@ main {
     }
 }
 
-
 @media (max-width: 768px) {
     /* HOME */
     #title_header {
@@ -363,7 +370,6 @@ main {
         margin: auto !important;       
     }
 }
-
 
 @media (max-width: 992px) {
     /* HOME */
