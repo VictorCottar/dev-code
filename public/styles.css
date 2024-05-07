@@ -443,11 +443,7 @@ main {
     
   /* HOME */
     header {
-    height: 6rem;
- }
-
-    footer {
-    height: 2rem;
+    height: 5rem;
  }
 
     #title_header {
@@ -469,54 +465,54 @@ main {
     gap: 0;
     height: 420px;
     width: 380px;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
  }
 
     #text_home {
     font-size: 33px;
-    margin-top: 6rem;
+    margin-top: 3rem;
  }
 
     #text_home_sub {
     font-size: 33px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
  }
 
 #button_play {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
-    width: 16rem;
+    width: 15rem;
     margin: 0;
 }
 
 /* PERGUNTAS */
     #container_questions {
     width: 24rem;
-    height: 35rem;
+    height: 32rem;
     margin-top: 2rem;
  }
 
     #title_question {
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
  }
 
     #button_question {
     width: 100%;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 0px 0px 10px 0px;    
  }
 
     #button_question_correct {
     width: 100%;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 0px 0px 10px 0px;    
  }
 
 /* CARD ENDGAME */
     #card_endgame {
     width: 24rem;
-    height: 35rem;
+    height: 32rem;
     margin-top: 2rem;
  }
 
@@ -536,3 +532,97 @@ main {
     padding: 1rem;      
  }
 }
+
+@media (max-width: 375px) {
+    
+    header {
+      height: 4rem;
+    }
+  
+      #title_header {
+      font-size: 2.2em;
+   }
+  
+      #main_home {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+   }
+  
+      #div_text_home {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 0;
+      height: 420px;
+      width: 360px;
+      margin-top: 0.5rem;
+   }
+  
+      #text_home {
+      font-size: 30px;
+      margin-top: 3rem;
+   }
+  
+      #text_home_sub {
+      font-size: 30px;
+      margin-bottom: 30px;
+   }
+  
+  #button_play {
+      font-size: 1.4rem;
+      padding: 0.5rem;
+      width: 12rem;
+      margin: 0;
+  }
+  
+  /* PERGUNTAS */
+      #container_questions {
+      width: 22rem;
+      height: 32rem;
+      margin-top: 2rem;
+   }
+  
+      #title_question {
+      margin-top: 1rem;
+      font-size: 1rem;
+   }
+  
+      #button_question {
+      width: 100%;
+      font-size: 0.8rem;
+      margin: 0px 0px 10px 0px;    
+   }
+  
+      #button_question_correct {
+      width: 100%;
+      font-size: 0.8rem;
+      margin: 0px 0px 10px 0px;    
+   }
+  
+  /* CARD ENDGAME */
+      #card_endgame {
+      width: 22rem;
+      height: 32rem;
+      margin-top: 2rem;
+   }
+  
+      #score {
+      font-size: 1.1rem;
+   }
+  
+      #button_restart {
+      width: 17rem;
+      font-size: 14px;
+      margin: auto;       
+   }
+      #button_sharer {
+      width: 16rem;
+      font-size: 13px;
+      margin: auto;
+      padding: 1rem;      
+   }
+  }
+  
